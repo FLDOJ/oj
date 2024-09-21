@@ -1,0 +1,21 @@
+INFO 2024-09-17 15:40:38,362 daemon Exiting due to SIGINT
+INFO 2024-09-17 15:52:59,722 daemon Exiting due to SIGINT
+INFO 2024-09-17 15:53:54,892 daemon Exiting due to SIGINT
+INFO 2024-09-17 16:07:51,818 judge_handler Judge connected from: ('127.0.0.1', 41654)
+INFO 2024-09-17 16:07:51,833 judge_handler Judge authenticated: ('127.0.0.1', 41654) (Yuna)
+INFO 2024-09-17 16:09:09,176 judge_list Free judges: 1
+INFO 2024-09-17 16:09:09,176 judge_list Dispatched submission 1 to: Yuna
+INFO 2024-09-17 16:09:09,187 judge_handler Submission acknowledged: 1
+INFO 2024-09-17 16:09:09,417 judge_handler Yuna: Submission generated compiler messages: 1
+INFO 2024-09-17 16:09:09,420 judge_handler Yuna: Grading has begun on: 1
+INFO 2024-09-17 16:09:09,640 judge_handler Yuna: 2 test case(s) completed on: 1
+INFO 2024-09-17 16:09:09,982 judge_handler Yuna: 1 test case(s) completed on: 1
+INFO 2024-09-17 16:09:09,992 judge_handler Yuna: Grading has ended on: 1
+INFO 2024-09-17 16:09:09,992 judge_list Judge available after grading 1: Yuna
+INFO 2024-09-19 16:06:43,782 judge_handler Yuna: Updated problem list
+INFO 2024-09-19 16:07:41,661 judge_handler Yuna: Updated problem list
+INFO 2024-09-19 16:07:44,662 judge_handler Yuna: Updated problem list
+INFO 2024-09-19 16:08:04,919 judge_handler Yuna: Updated problem list
+INFO 2024-09-19 16:08:07,920 judge_handler Yuna: Updated problem list
+INFO 2024-09-19 16:09:08,111 judge_handler Judge connected from: ('127.0.0.1', 37092)
+INFO 2024-09-19 16:09:08,116 judge_handler Judge authenticated: ('127.0.0.1', 37092) (Denki)
