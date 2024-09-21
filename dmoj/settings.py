@@ -252,9 +252,17 @@ else:
                     "model": "auth.User",
                     "icon": "fa-user",
                     "children": [
-                        "judge.Profile",
                         "auth.Group",
                         "registration.RegistrationProfile",
+                    ],
+                },
+                                {
+                    'model': 'judge.Profile',
+                    'icon': 'fa-user-plus',
+                    'children': [
+                        'judge.Organization',
+                        'judge.OrganizationRequest',
+                        'judge.Badge',
                     ],
                 },
                 {

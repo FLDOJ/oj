@@ -8,12 +8,14 @@ from reversion.admin import VersionAdmin
 from django_ace import AceWidget
 from judge.models import Profile, WebAuthnCredential
 from judge.utils.views import NoBatchDeleteMixin
-from judge.widgets import AdminMartorWidget, AdminSelect2Widget
+from judge.widgets import AdminMartorWidget, AdminSelect2MultipleWidget, AdminSelect2Widget
 
 
 class ProfileForm(ModelForm):
     def __init__(self, *args, **kwargs):
         super(ProfileForm, self).__init__(*args, **kwargs)
+        self.fields['display_badge'].queryset = self.instance.badges.all()
+        self.fields['display_badge'].required = False
         if 'current_contest' in self.base_fields:
             # form.fields['current_contest'] does not exist when the user has only view permission on the model.
             self.fields['current_contest'].queryset = self.instance.contest_history.select_related('contest') \
@@ -27,6 +29,8 @@ class ProfileForm(ModelForm):
             'language': AdminSelect2Widget,
             'ace_theme': AdminSelect2Widget,
             'current_contest': AdminSelect2Widget,
+            'badges': AdminSelect2MultipleWidget(attrs={'style': 'width: 100%'}),
+            'display_badge': AdminSelect2Widget,
             'about': AdminMartorWidget(attrs={'data-markdownfy-url': reverse_lazy('profile_preview')}),
         }
 
@@ -54,7 +58,7 @@ class WebAuthnInline(admin.TabularInline):
 
 
 class ProfileAdmin(NoBatchDeleteMixin, VersionAdmin):
-    fields = ('user', 'display_rank', 'about', 'organizations', 'timezone', 'language', 'ace_theme',
+    fields = ('user', 'display_rank', 'badges', 'display_badge', 'about', 'organizations', 'timezone', 'language', 'ace_theme',
               'math_engine', 'last_access', 'ip', 'mute', 'is_unlisted', 'notes', 'is_totp_enabled', 'user_script',
               'ban_reason', 'username_display_override', 'current_contest')
     readonly_fields = ('user',)

@@ -129,7 +129,7 @@ class PostListBase(ListView):
 
     def get_queryset(self):
         queryset = (BlogPost.objects.filter(visible=True, publish_on__lte=timezone.now())
-                    .prefetch_related('authors__user'))
+                    .prefetch_related('authors__user', 'authors__display_badge'))
         if self.request.user.is_authenticated:
             profile = self.request.profile
             queryset = queryset.annotate(
@@ -207,7 +207,7 @@ class PostList(PostListBase):
         if self.request.user.is_authenticated:
             context['own_open_tickets'] = (
                 Ticket.objects.filter(user=self.request.profile, is_open=True).order_by('-id')
-                              .prefetch_related('linked_item').select_related('user__user')
+                              .prefetch_related('linked_item').select_related('user__user', 'user__display_badge')
             )
         else:
             context['own_open_tickets'] = []
@@ -215,7 +215,7 @@ class PostList(PostListBase):
         # Superusers better be staffs, not the spell-casting kind either.
         if self.request.user.is_staff:
             tickets = (Ticket.objects.order_by('-id').filter(is_open=True).prefetch_related('linked_item')
-                             .select_related('user__user'))
+                             .select_related('user__user', 'user__display_badge'))
             context['open_tickets'] = filter_visible_tickets(tickets, self.request.user)[:10]
         else:
             context['open_tickets'] = []
