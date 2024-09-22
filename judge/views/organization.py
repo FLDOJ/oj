@@ -335,11 +335,11 @@ class CreateOrganization(TitleMixin, CreateView):
 
     def dispatch(self, request, *args, **kwargs):
         if self.has_permission():
-            if self.request.user.profile.admin_of.count() >= settings.CLAOJ_ORGANIZATION_ADMIN_LIMIT and \
+            if self.request.user.profile.admin_of.count() >= settings.FLDOJ_ORGANIZATION_ADMIN_LIMIT and \
                not self.request.user.has_perm('spam_organization'):
                 return render(request, 'organization/create-limit-error.html', {
                     'admin_of': self.request.user.profile.admin_of.all(),
-                    'admin_limit': settings.CLAOJ_ORGANIZATION_ADMIN_LIMIT,
+                    'admin_limit': settings.FLDOJ_ORGANIZATION_ADMIN_LIMIT,
                     'title': _("Can't create organization"),
                 }, status=403)
             return super(CreateOrganization, self).dispatch(request, *args, **kwargs)

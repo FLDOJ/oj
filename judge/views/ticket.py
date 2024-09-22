@@ -221,7 +221,7 @@ class TicketStatusChangeView(TicketMixin, SingleObjectMixin, View):
         if self.contributive is not None and ticket.is_contributive != self.contributive:
             if not request.user.has_perm('change_ticket') and self.request.profile == ticket.user:
                 return HttpResponseBadRequest(_('You cannot vote your own ticket.'), content_type='text/plain')
-            ticket.user.update_contribution_points(settings.CLAOJ_CP_TICKET *
+            ticket.user.update_contribution_points(settings.FLDOJ_CP_TICKET *
                                                    (self.contributive - ticket.is_contributive))
             ticket.is_contributive = self.contributive
             ticket.save()

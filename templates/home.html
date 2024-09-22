@@ -1,9 +1,22 @@
 {% extends "blog/list.html" %}
+
 {% block before_posts %}
-    {% if i18n_config.home_page_top %}
-        {{ render_django(i18n_config.home_page_top, request=request, user_count=user_count, problem_count=problem_count, submission_count=submission_count, language_count=language_count, perms=perms) }}
-    {% endif %}
+    <!-- Container wrapping both intro and content -->
+    <div id="intro-container" style="border: 2px solid #ccc; padding: 20px; margin: 20px; border-radius: 8px;">
+
+        <!-- Intro section added here -->
+        <div id="intro-section" style="padding: 20px; text-align: center; background-color: #f0f0f0;">
+            <h1>Chào mừng bạn đến với</h1>
+            <h1>Folody Online Judge!</h1>
+        </div>
+
+        <!-- Content that includes home page top and other elements -->
+        {% if i18n_config.home_page_top %}
+            {{ render_django(i18n_config.home_page_top, request=request, user_count=user_count, problem_count=problem_count, submission_count=submission_count, language_count=language_count, perms=perms) }}
+        {% endif %}
+    </div>
 {% endblock %}
+
 {% block meta %}
     {% if i18n_config.meta_description %}
         <meta name="description" content="{{ i18n_config['meta_description'] }}">

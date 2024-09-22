@@ -45,7 +45,7 @@ def rescore_problem(self, problem_id, publicy_changed):
     problem = Problem.objects.get(id=problem_id)
     submissions = Submission.objects.filter(problem_id=problem_id)
     if publicy_changed and problem.suggester is not None:
-        points = settings.CLAOJ_CP_PROBLEM
+        points = settings.FLDOJ_CP_PROBLEM
         if problem.is_public is False:
             points = -points
         problem.suggester.update_contribution_points(points)

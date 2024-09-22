@@ -230,21 +230,21 @@ class PostList(PostListBase):
                 .filter(performance_points__gt=0, is_unlisted=False)
                 .only('user', 'performance_points', 'display_rank', 'rating')
                 .select_related('user')
-                [:settings.CLAOJ_HOMEPAGE_TOP_USERS_COUNT])
+                [:settings.FLDOJ_HOMEPAGE_TOP_USERS_COUNT])
 
     def get_top_rating_users(self):
         return (Profile.objects.order_by('-rating')
                 .filter(performance_points__gt=0, is_unlisted=False)
                 .only('user', 'performance_points', 'display_rank', 'rating')
                 .select_related('user')
-                [:settings.CLAOJ_HOMEPAGE_TOP_USERS_COUNT])
+                [:settings.FLDOJ_HOMEPAGE_TOP_USERS_COUNT])
 
     def get_top_contributors(self):
         return (Profile.objects.order_by('-contribution_points')
                 .filter(contribution_points__gt=0, is_unlisted=False)
                 .only('user', 'contribution_points', 'display_rank', 'rating')
                 .select_related('user')
-                [:settings.CLAOJ_HOMEPAGE_TOP_USERS_COUNT])
+                [:settings.FLDOJ_HOMEPAGE_TOP_USERS_COUNT])
 
 
 class PostView(TitleMixin, CommentedDetailView):
@@ -316,12 +316,12 @@ class BlogPostCreate(TitleMixin, CreateView):
         if not request.user.is_authenticated:
             raise PermissionDenied()
         # hasattr(self, 'organization') -> admin org
-        if request.user.profile.problem_count < settings.CLAOJ_BLOG_MIN_PROBLEM_COUNT \
+        if request.user.profile.problem_count < settings.FLDOJ_BLOG_MIN_PROBLEM_COUNT \
                 and not request.user.is_superuser and not hasattr(self, 'organization'):
             return generic_message(request, _('Permission denied'),
                                    _('You cannot create blog post.\n'
                                      'Note: You need to solve at least %d problems to create new blog post.')
-                                   % settings.CLAOJ_BLOG_MIN_PROBLEM_COUNT)
+                                   % settings.FLDOJ_BLOG_MIN_PROBLEM_COUNT)
         return super().dispatch(request, *args, **kwargs)
 
 

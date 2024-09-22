@@ -51,15 +51,15 @@ def DMOJ_PP_BONUS_FUNCTION(n):
     return 300 * (1 - 0.997**n)  # noqa: E731
 
 
-CLAOJ_ORG_PP_STEP = 0.95
-CLAOJ_ORG_PP_ENTRIES = 100
-CLAOJ_ORG_PP_SCALE = 1
+FLDOJ_ORG_PP_STEP = 0.95
+FLDOJ_ORG_PP_ENTRIES = 100
+FLDOJ_ORG_PP_SCALE = 1
 
 # Contribution points function
 # Both should be int
-CLAOJ_CP_COMMENT = 1  # Each comment vote equals 1 CP
-CLAOJ_CP_TICKET = 10  # Each good ticket equals 10 CP
-CLAOJ_CP_PROBLEM = 20  # Each suggested problem equals 20 CP
+FLDOJ_CP_COMMENT = 1  # Each comment vote equals 1 CP
+FLDOJ_CP_TICKET = 10  # Each good ticket equals 10 CP
+FLDOJ_CP_PROBLEM = 20  # Each suggested problem equals 20 CP
 
 NODEJS = "/usr/bin/node"
 EXIFTOOL = "/usr/bin/exiftool"
@@ -67,8 +67,8 @@ ACE_URL = "//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3"
 SELECT2_JS_URL = "//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"
 SELECT2_CSS_URL = "//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css"
 
-CLAOJ_HOMEPAGE_TOP_USERS_COUNT = 5
-CLAOJ_DISPLAY_RANKS = (
+FLDOJ_HOMEPAGE_TOP_USERS_COUNT = 5
+FLDOJ_DISPLAY_RANKS = (
     ("user", _("Normal User")),
     ("setter", _("Problem Setter")),
     ("teacher", _("Teacher")),
@@ -79,14 +79,14 @@ CLAOJ_DISPLAY_RANKS = (
 
 # Maximum number of organization a single user can be admin, to be able to
 # create new organization, without the `spam_organization` permission
-CLAOJ_ORGANIZATION_ADMIN_LIMIT = 3
+FLDOJ_ORGANIZATION_ADMIN_LIMIT = 3
 # Maximum timelimit (second) that a user can set for a problem
 # without the `high_problem_timelimit` permission
-CLAOJ_PROBLEM_TIMELIMIT_LIMIT = 5
+FLDOJ_PROBLEM_TIMELIMIT_LIMIT = 5
 # Maximum contest duration (day) that a user can set for a contest
 # without the `long_contest_duration` permission
-CLAOJ_CONTEST_DURATION_LIMIT = 15
-CLAOJ_BLOG_MIN_PROBLEM_COUNT = 10
+FLDOJ_CONTEST_DURATION_LIMIT = 15
+FLDOJ_BLOG_MIN_PROBLEM_COUNT = 10
 
 DMOJ_CAMO_URL = None
 DMOJ_CAMO_KEY = None
@@ -105,11 +105,11 @@ DMOJ_EMAIL_THROTTLING = (10, 60)
 DMOJ_STATS_LANGUAGE_THRESHOLD = 10
 DMOJ_SUBMISSIONS_REJUDGE_LIMIT = 10
 # Maximum number of submissions a single user can queue without the `spam_submission` permission
-CLAOJ_BLOG_MIN_PROBLEM_COUNT = 2
+FLDOJ_BLOG_MIN_PROBLEM_COUNT = 2
 # Whether to allow users to view source code: 'all' | 'all-solved' | 'only-own'
 DMOJ_SUBMISSION_SOURCE_VISIBILITY = "all-solved"
 DMOJ_BLOG_NEW_PROBLEM_COUNT = 7
-CLAOJ_ORG_NEW_CONTEST_COUNT = 5
+FLDOJ_ORG_NEW_CONTEST_COUNT = 5
 DMOJ_TOTP_TOLERANCE_HALF_MINUTES = 1
 DMOJ_SCRATCH_CODES_COUNT = 5
 DMOJ_USER_MAX_ORGANIZATION_COUNT = 3

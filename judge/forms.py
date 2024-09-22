@@ -138,9 +138,9 @@ class LanguageLimitForm(ModelForm):
     def clean_time_limit(self):
         has_high_perm = self.user and self.user.has_perm('judge.high_problem_timelimit')
         timelimit = self.cleaned_data['time_limit']
-        if timelimit and timelimit > settings.CLAOJ_PROBLEM_TIMELIMIT_LIMIT and not has_high_perm:
+        if timelimit and timelimit > settings.FLDOJ_PROBLEM_TIMELIMIT_LIMIT and not has_high_perm:
             raise forms.ValidationError(_('You cannot set time limit higher than %d seconds')
-                                        % settings.CLAOJ_PROBLEM_TIMELIMIT_LIMIT,
+                                        % settings.FLDOJ_PROBLEM_TIMELIMIT_LIMIT,
                                         'problem_timelimit_too_long')
         return self.cleaned_data['time_limit']
 
@@ -176,9 +176,9 @@ class ProblemEditForm(ModelForm):
     def clean_time_limit(self):
         has_high_perm = self.user and self.user.has_perm('judge.high_problem_timelimit')
         timelimit = self.cleaned_data['time_limit']
-        if timelimit and timelimit > settings.CLAOJ_PROBLEM_TIMELIMIT_LIMIT and not has_high_perm:
+        if timelimit and timelimit > settings.FLDOJ_PROBLEM_TIMELIMIT_LIMIT and not has_high_perm:
             raise forms.ValidationError(_('You cannot set time limit higher than %d seconds')
-                                        % settings.CLAOJ_PROBLEM_TIMELIMIT_LIMIT,
+                                        % settings.FLDOJ_PROBLEM_TIMELIMIT_LIMIT,
                                         'problem_timelimit_too_long')
         return self.cleaned_data['time_limit']
 
@@ -589,9 +589,9 @@ class ContestForm(ModelForm):
 
         has_long_perm = self.user and self.user.has_perm('judge.long_contest_duration')
         if end_time and start_time and \
-           (end_time - start_time).days > settings.CLAOJ_CONTEST_DURATION_LIMIT and not has_long_perm:
+           (end_time - start_time).days > settings.FLDOJ_CONTEST_DURATION_LIMIT and not has_long_perm:
             raise forms.ValidationError(_('Contest duration cannot be longer than %d days')
-                                        % settings.CLAOJ_CONTEST_DURATION_LIMIT,
+                                        % settings.FLDOJ_CONTEST_DURATION_LIMIT,
                                         'contest_duration_too_long')
         return cleaned_data
 

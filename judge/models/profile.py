@@ -63,12 +63,12 @@ class Organization(models.Model):
     member_count = models.IntegerField(default=0)
     performance_points = models.FloatField(default=0)
 
-    _pp_table = [pow(settings.CLAOJ_ORG_PP_STEP, i) for i in range(settings.CLAOJ_ORG_PP_ENTRIES)]
+    _pp_table = [pow(settings.FLDOJ_ORG_PP_STEP, i) for i in range(settings.FLDOJ_ORG_PP_ENTRIES)]
 
     def calculate_points(self, table=_pp_table):
         data = self.members.get_queryset().order_by('-performance_points') \
                    .values_list('performance_points', flat=True).filter(performance_points__gt=0)
-        pp = settings.CLAOJ_ORG_PP_SCALE * sum(ratio * pp for ratio, pp in zip(table, data))
+        pp = settings.FLDOJ_ORG_PP_SCALE * sum(ratio * pp for ratio, pp in zip(table, data))
         if not float_compare_equal(self.performance_points, pp):
             self.performance_points = pp
             self.save(update_fields=['performance_points'])
@@ -146,7 +146,7 @@ class Profile(models.Model):
     organizations = SortedManyToManyField(Organization, verbose_name=_('organization'), blank=True,
                                           related_name='members', related_query_name='member')
     display_rank = models.CharField(max_length=10, default='user', verbose_name=_('display rank'),
-                                    choices=settings.CLAOJ_DISPLAY_RANKS)
+                                    choices=settings.FLDOJ_DISPLAY_RANKS)
     mute = models.BooleanField(verbose_name=_('comment mute'), help_text=_('Some users are at their best when silent.'),
                                default=False)
     is_unlisted = models.BooleanField(verbose_name=_('unlisted user'), help_text=_('User will not be ranked.'),
@@ -258,9 +258,9 @@ class Profile(models.Model):
         count_good_tickets = Ticket.objects.filter(user=self.id, is_contributive=True) \
             .count()
         count_suggested_problem = self.suggested_problems.filter(is_public=True).count()
-        new_pp = (total_comment_scores + total_blog_scores) * settings.CLAOJ_CP_COMMENT + \
-            count_good_tickets * settings.CLAOJ_CP_TICKET + \
-            count_suggested_problem * settings.CLAOJ_CP_PROBLEM
+        new_pp = (total_comment_scores + total_blog_scores) * settings.FLDOJ_CP_COMMENT + \
+            count_good_tickets * settings.FLDOJ_CP_TICKET + \
+            count_suggested_problem * settings.FLDOJ_CP_PROBLEM
         if new_pp != old_pp:
             self.contribution_points = new_pp
             self.save(update_fields=['contribution_points'])

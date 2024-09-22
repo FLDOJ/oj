@@ -59,3 +59,13 @@ INFO 2024-09-21 11:42:18,290 judge_handler Denki: 16 test case(s) completed on: 
 INFO 2024-09-21 11:42:18,345 judge_handler Denki: 4 test case(s) completed on: 3
 INFO 2024-09-21 11:42:18,351 judge_handler Denki: Grading has ended on: 3
 INFO 2024-09-21 11:42:18,351 judge_list Judge available after grading 3: Denki
+INFO 2024-09-21 13:47:54,620 daemon Exiting due to SIGINT
+INFO 2024-09-22 07:12:26,042 daemon Exiting due to SIGINT
+INFO 2024-09-22 07:28:55,401 judge_handler Judge connected from: ('127.0.0.1', 38890)
+INFO 2024-09-22 07:28:55,405 judge_handler Judge authenticated: ('127.0.0.1', 38890) (Yuna)
+INFO 2024-09-22 07:29:01,369 judge_handler Judge connected from: ('127.0.0.1', 56424)
+INFO 2024-09-22 07:29:01,373 judge_handler Judge authenticated: ('127.0.0.1', 56424) (Denki)
+INFO 2024-09-22 07:30:22,065 judge_handler Yuna: Updated problem list
+INFO 2024-09-22 07:30:22,066 judge_handler Denki: Updated problem list
+INFO 2024-09-22 07:30:25,066 judge_handler Yuna: Updated problem list
+INFO 2024-09-22 07:30:25,068 judge_handler Denki: Updated problem list
