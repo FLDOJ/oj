@@ -2,10 +2,10 @@
 
 {% block before_posts %}
     <!-- Container wrapping both intro and content -->
-    <div id="intro-container" style="border: 2px solid #ccc; padding: 20px; margin: 20px; border-radius: 8px;">
-
+    <div id="intro-container" class="dark-mode-section" style="padding: 20px; margin: 20px; border-radius: 8px;">
+        
         <!-- Intro section added here -->
-        <div id="intro-section" style="padding: 20px; text-align: center; background-color: #f0f0f0;">
+        <div id="intro-section" style="padding: 20px; text-align: center;">
             <h1>Chào mừng bạn đến với</h1>
             <h1>Folody Online Judge!</h1>
         </div>
@@ -34,3 +34,28 @@
         }
     </script>
 {% endblock %}
+
+<!-- Add custom styles for both light mode and dark mode -->
+<style>
+    /* Light mode styling (default) */
+    #intro-container {
+        background-color: #f0f0f0; /* Light background */
+        border: 2px solid #ccc;    /* Light border */
+    }
+
+    #intro-section h1, #intro-section p {
+        color: black; /* Black text for light mode */
+    }
+
+    /* Dark mode styling */
+    @media (prefers-color-scheme: dark) {
+        #intro-container {
+            background-color: #1e1e2f; /* Dark background */
+            border: 2px solid #2c2c3d; /* Dark border */
+        }
+
+        #intro-section h1, #intro-section p {
+            color: white; /* White text for dark mode */
+        }
+    }
+</style>
