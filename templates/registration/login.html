@@ -39,39 +39,39 @@
         <form action="" method="post" class="form-area">
             <center><h2 style="display:inline;text-align: center;">{{ _('Login') }}</h2></center>
             {% csrf_token %}
-            {% if form.errors %}x
+            {% if form.errors %}
                 <div id="form-errors" style="max-width: fit-content;">
                     <p class="error">{{ _('Invalid username or password.') }}</p>
                     {% for error in form.non_field_errors() %}
                         <p class="error">{{error}}</p>
                     {% endfor %}
                     {% if form.errors and misc_config.discord_invite_link and misc_config.discord_invite_shieldio %}
-                    {{ _('If you have problems with your account, feel free to shoot us a message at: ') }}<a href="https://www.facebook.com/itclapro">It-Cla Productions</a>
+                        {{ _('If you have problems with your account, feel free to shoot us a message at: ') }}<a href="https://www.facebook.com/itclapro">It-Cla Productions</a>
                     {% endif %}
                 </div>
             {% endif %}
             <table border="0" style="text-align:left">
                 <tr>
-                    <th style="padding-top: 0.75em;"><i class="fa fa-user fa-fw"></i>
-                    </th>
-                    <td style="width:100%;">{{ form.username }}
-                    </td>
+                    <th style="padding-top: 0.75em;"><i class="fa fa-user fa-fw"></i></th>
+                    <td style="width:100%;">{{ form.username }}</td>
                 </tr>
                 <tr>
-                    <th style="padding-top: 0.75em;"><i class="fa fa-key fa-fw"></i>
-                    </th>
-                    <td style="width:100%;">{{ form.password }}
-                    </td>
+                    <th style="padding-top: 0.75em;"><i class="fa fa-key fa-fw"></i></th>
+                    <td style="width:100%;">{{ form.password }}</td>
                 </tr>
             </table>
+
+            {% if form.captcha %}
+                <div style="margin-top: 1em;">{{ form.captcha }}</div>
+            {% endif %}
+
             <hr>
-		<a href="{{ url('password_reset') }}" style="padding-right: 1em;">{{ _('Forgot your password?') }}</a>
+            <a href="{{ url('password_reset') }}" style="padding-right: 1em;">{{ _('Forgot your password?') }}</a>
             <button style="float:right;" type="submit">
                 <i class="fa fa-sign-in" aria-hidden="true"></i> {{ _('Login') }}
             </button>
             <input type="hidden" name="next" value="{{ next }}">
         </form>
-        
 
         {% if form.has_google_auth or form.has_facebook_auth or form.has_github_auth %}
             <h4>{{ _('Or log in with...') }}</h4>
@@ -94,4 +94,11 @@
             </div>
         {% endif %}
     </div>
+{% endblock %}
+
+{% block js_media %}
+    {{ form.media.js }}
+    {% if form.captcha %}
+        {{ recaptcha_init(LANGUAGE_CODE) }}
+    {% endif %}
 {% endblock %}

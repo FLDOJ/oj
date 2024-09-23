@@ -69,3 +69,112 @@ INFO 2024-09-22 07:30:22,065 judge_handler Yuna: Updated problem list
 INFO 2024-09-22 07:30:22,066 judge_handler Denki: Updated problem list
 INFO 2024-09-22 07:30:25,066 judge_handler Yuna: Updated problem list
 INFO 2024-09-22 07:30:25,068 judge_handler Denki: Updated problem list
+INFO 2024-09-22 15:53:33,361 judge_handler Denki: Updated problem list
+INFO 2024-09-22 15:53:33,362 judge_handler Yuna: Updated problem list
+INFO 2024-09-22 15:53:36,363 judge_handler Denki: Updated problem list
+INFO 2024-09-22 15:53:36,363 judge_handler Yuna: Updated problem list
+INFO 2024-09-22 15:53:39,364 judge_handler Denki: Updated problem list
+INFO 2024-09-22 15:53:39,364 judge_handler Yuna: Updated problem list
+INFO 2024-09-22 15:57:47,937 judge_list Free judges: 2
+INFO 2024-09-22 15:57:47,938 judge_list Dispatched submission 1 to: Denki
+INFO 2024-09-22 15:57:47,949 judge_handler Submission acknowledged: 1
+INFO 2024-09-22 15:57:48,105 judge_handler Denki: Submission generated compiler messages: 1
+INFO 2024-09-22 15:57:48,108 judge_handler Denki: Grading has begun on: 1
+INFO 2024-09-22 15:57:48,335 judge_handler Denki: 3 test case(s) completed on: 1
+INFO 2024-09-22 15:57:48,586 judge_handler Denki: 4 test case(s) completed on: 1
+INFO 2024-09-22 15:57:48,836 judge_handler Denki: 3 test case(s) completed on: 1
+INFO 2024-09-22 15:57:49,086 judge_handler Denki: 4 test case(s) completed on: 1
+INFO 2024-09-22 15:57:49,337 judge_handler Denki: 3 test case(s) completed on: 1
+INFO 2024-09-22 15:57:49,512 judge_handler Denki: 3 test case(s) completed on: 1
+INFO 2024-09-22 15:57:49,521 judge_handler Denki: Grading has ended on: 1
+INFO 2024-09-22 15:57:49,522 judge_list Judge available after grading 1: Denki
+INFO 2024-09-22 16:03:57,309 judge_handler Yuna: Updated problem list
+INFO 2024-09-22 16:03:57,309 judge_handler Denki: Updated problem list
+INFO 2024-09-22 16:04:00,310 judge_handler Yuna: Updated problem list
+INFO 2024-09-22 16:04:00,310 judge_handler Denki: Updated problem list
+INFO 2024-09-22 16:04:03,311 judge_handler Yuna: Updated problem list
+INFO 2024-09-22 16:04:03,313 judge_handler Denki: Updated problem list
+INFO 2024-09-23 08:26:19,657 judge_handler Denki: Updated problem list
+INFO 2024-09-23 08:26:19,659 judge_handler Yuna: Updated problem list
+INFO 2024-09-23 08:26:22,658 judge_handler Denki: Updated problem list
+INFO 2024-09-23 08:26:22,659 judge_handler Yuna: Updated problem list
+INFO 2024-09-23 08:42:49,177 judge_handler Denki: Updated problem list
+INFO 2024-09-23 08:42:49,179 judge_handler Yuna: Updated problem list
+INFO 2024-09-23 08:45:06,022 judge_handler Denki: Updated problem list
+INFO 2024-09-23 08:45:06,024 judge_handler Yuna: Updated problem list
+INFO 2024-09-23 08:46:13,427 judge_handler Denki: Updated problem list
+INFO 2024-09-23 08:46:13,427 judge_handler Yuna: Updated problem list
+INFO 2024-09-23 08:46:16,428 judge_handler Denki: Updated problem list
+INFO 2024-09-23 08:46:16,430 judge_handler Yuna: Updated problem list
+INFO 2024-09-23 08:47:39,810 judge_handler Yuna: Updated problem list
+INFO 2024-09-23 08:47:39,810 judge_handler Denki: Updated problem list
+INFO 2024-09-23 08:47:42,811 judge_handler Denki: Updated problem list
+INFO 2024-09-23 08:47:42,812 judge_handler Yuna: Updated problem list
+INFO 2024-09-23 08:48:05,033 judge_list Free judges: 2
+INFO 2024-09-23 08:48:05,033 judge_list Dispatched submission 2 to: Yuna
+INFO 2024-09-23 08:48:05,043 judge_handler Submission acknowledged: 2
+INFO 2024-09-23 08:48:05,201 judge_handler Yuna: Submission generated compiler messages: 2
+INFO 2024-09-23 08:48:05,205 judge_handler Yuna: Grading has begun on: 2
+INFO 2024-09-23 08:48:05,277 judge_handler Yuna: 6 test case(s) completed on: 2
+INFO 2024-09-23 08:48:05,528 judge_handler Yuna: 7 test case(s) completed on: 2
+INFO 2024-09-23 08:48:05,778 judge_handler Yuna: 2 test case(s) completed on: 2
+INFO 2024-09-23 08:48:05,888 judge_handler Yuna: 1 test case(s) completed on: 2
+INFO 2024-09-23 08:48:05,896 judge_handler Yuna: Grading has ended on: 2
+INFO 2024-09-23 08:48:05,896 judge_list Judge available after grading 2: Yuna
+INFO 2024-09-23 08:48:27,069 judge_handler Denki: Updated problem list
+INFO 2024-09-23 08:48:27,070 judge_handler Yuna: Updated problem list
+INFO 2024-09-23 08:48:30,071 judge_handler Yuna: Updated problem list
+INFO 2024-09-23 08:48:30,071 judge_handler Denki: Updated problem list
+INFO 2024-09-23 09:04:38,901 judge_list Free judges: 2
+INFO 2024-09-23 09:04:38,902 judge_list Dispatched submission 3 to: Denki
+INFO 2024-09-23 09:04:38,912 judge_handler Submission acknowledged: 3
+INFO 2024-09-23 09:04:39,060 judge_handler Denki: Submission generated compiler messages: 3
+INFO 2024-09-23 09:04:39,064 judge_handler Denki: Grading has begun on: 3
+INFO 2024-09-23 09:04:39,469 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:39,719 judge_handler Denki: 2 test case(s) completed on: 3
+INFO 2024-09-23 09:04:39,969 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:40,220 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:40,470 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:40,720 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:40,971 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:41,221 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:41,471 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:41,722 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:41,972 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:42,223 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:42,473 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:42,723 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:42,821 judge_handler Denki: 1 test case(s) completed on: 3
+INFO 2024-09-23 09:04:42,831 judge_handler Denki: Grading has ended on: 3
+INFO 2024-09-23 09:04:42,831 judge_list Judge available after grading 3: Denki
+INFO 2024-09-23 09:12:46,168 judge_list Free judges: 2
+INFO 2024-09-23 09:12:46,168 judge_list Dispatched submission 4 to: Denki
+INFO 2024-09-23 09:12:46,178 judge_handler Submission acknowledged: 4
+INFO 2024-09-23 09:12:46,335 judge_handler Denki: Submission generated compiler messages: 4
+INFO 2024-09-23 09:12:46,339 judge_handler Denki: Grading has begun on: 4
+INFO 2024-09-23 09:12:46,555 judge_handler Denki: 12 test case(s) completed on: 4
+INFO 2024-09-23 09:12:46,806 judge_handler Denki: 2 test case(s) completed on: 4
+INFO 2024-09-23 09:12:47,028 judge_handler Denki: 2 test case(s) completed on: 4
+INFO 2024-09-23 09:12:47,037 judge_handler Denki: Grading has ended on: 4
+INFO 2024-09-23 09:12:47,037 judge_list Judge available after grading 4: Denki
+INFO 2024-09-23 12:48:38,861 judge_list Free judges: 2
+INFO 2024-09-23 12:48:38,861 judge_list Dispatched submission 4 to: Denki
+INFO 2024-09-23 12:48:38,870 judge_handler Submission acknowledged: 4
+INFO 2024-09-23 12:48:39,021 judge_handler Denki: Submission generated compiler messages: 4
+INFO 2024-09-23 12:48:39,024 judge_handler Denki: Grading has begun on: 4
+INFO 2024-09-23 12:48:39,236 judge_handler Denki: 12 test case(s) completed on: 4
+INFO 2024-09-23 12:48:39,486 judge_handler Denki: 2 test case(s) completed on: 4
+INFO 2024-09-23 12:48:39,712 judge_handler Denki: 2 test case(s) completed on: 4
+INFO 2024-09-23 12:48:39,720 judge_handler Denki: Grading has ended on: 4
+INFO 2024-09-23 12:48:39,720 judge_list Judge available after grading 4: Denki
+INFO 2024-09-23 13:52:40,729 daemon Exiting due to SIGINT
+INFO 2024-09-23 13:56:59,804 judge_handler Judge connected from: ('127.0.0.1', 56638)
+INFO 2024-09-23 13:56:59,806 judge_handler Judge connected from: ('127.0.0.1', 56652)
+INFO 2024-09-23 13:56:59,814 judge_handler Judge authenticated: ('127.0.0.1', 56638) (Yuna)
+INFO 2024-09-23 13:56:59,815 judge_handler Judge authenticated: ('127.0.0.1', 56652) (Denki)
+INFO 2024-09-23 13:57:04,201 judge_handler Judge disconnected from: ('127.0.0.1', 56638) with name Yuna
+INFO 2024-09-23 13:57:06,490 judge_handler Judge disconnected from: ('127.0.0.1', 56652) with name Denki
+INFO 2024-09-23 13:57:53,898 judge_handler Judge connected from: ('127.0.0.1', 59154)
+INFO 2024-09-23 13:57:53,902 judge_handler Judge authenticated: ('127.0.0.1', 59154) (Yuna)
+INFO 2024-09-23 13:57:56,134 judge_handler Judge connected from: ('127.0.0.1', 59170)
+INFO 2024-09-23 13:57:56,138 judge_handler Judge authenticated: ('127.0.0.1', 59170) (Denki)
