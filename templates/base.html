@@ -35,7 +35,8 @@
     {% endif %} 
     {% block meta %}{% endblock %}
     {% if not INLINE_FONTAWESOME %}
-        <link rel="stylesheet" href="{{ FONTAWESOME_CSS }}">
+        <!-- <link rel="stylesheet" href="{{ FONTAWESOME_CSS }}"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     {% endif %}
     {% compress css %}
         {# TODO: once dark mode support is better, enable for all users by deleting the else branch #}
@@ -49,7 +50,8 @@
         {% else %}
             <link rel="stylesheet" href="{{ static(LIGHT_STYLE_CSS) }}">
         {% endif %}
-        {% if INLINE_FONTAWESOME %}<link rel="stylesheet" href="{{ static('libs/fontawesome/font-awesome.css') }}">{% endif %}
+        {% if INLINE_FONTAWESOME %}<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">{% endif %} 
+        <!-- {% if INLINE_FONTAWESOME %}<link rel="stylesheet" href="{{ FONTAWESOME_CSS }}">{% endif %} -->
         <link rel="stylesheet" type="text/css" href="{{ static('libs/clipboard/tooltip.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ static('libs/select2/select2.css') }}">
     {% endcompress %}

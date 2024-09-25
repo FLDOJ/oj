@@ -194,7 +194,7 @@ INLINE_JQUERY = True
 INLINE_FONTAWESOME = True
 JQUERY_JS = "//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 FONTAWESOME_CSS = (
-    "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    "//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 )
 DMOJ_CANONICAL = ""
 
@@ -712,7 +712,7 @@ SOCIAL_AUTH_FACEBOOK_SCOPE = ["email"]
 SOCIAL_AUTH_SLUGIFY_USERNAMES = True
 SOCIAL_AUTH_SLUGIFY_FUNCTION = "judge.social_auth.slugify_username"
 
-MOSS_API_KEY = None
+MOSS_API_KEY = 763170405
 
 CELERY_WORKER_HIJACK_ROOT_LOGGER = False
 
