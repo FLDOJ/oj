@@ -178,3 +178,161 @@ INFO 2024-09-23 13:57:53,898 judge_handler Judge connected from: ('127.0.0.1', 5
 INFO 2024-09-23 13:57:53,902 judge_handler Judge authenticated: ('127.0.0.1', 59154) (Yuna)
 INFO 2024-09-23 13:57:56,134 judge_handler Judge connected from: ('127.0.0.1', 59170)
 INFO 2024-09-23 13:57:56,138 judge_handler Judge authenticated: ('127.0.0.1', 59170) (Denki)
+INFO 2024-09-25 15:28:14,356 judge_handler Judge connected from: ('127.0.0.1', 42210)
+INFO 2024-09-25 15:28:14,357 judge_handler Judge connected from: ('127.0.0.1', 42212)
+INFO 2024-09-25 15:28:14,362 judge_handler Judge authenticated: ('127.0.0.1', 42210) (Denki)
+INFO 2024-09-25 15:28:14,362 judge_handler Judge authenticated: ('127.0.0.1', 42212) (Yuna)
+INFO 2024-09-25 15:30:11,079 judge_list Free judges: 2
+INFO 2024-09-25 15:30:11,080 judge_list Dispatched submission 52 to: Denki
+INFO 2024-09-25 15:30:11,088 judge_handler Submission acknowledged: 52
+INFO 2024-09-25 15:30:11,266 judge_handler Denki: Submission generated compiler messages: 52
+INFO 2024-09-25 15:30:11,270 judge_handler Denki: Grading has begun on: 52
+INFO 2024-09-25 15:30:11,380 judge_handler Denki: 10 test case(s) completed on: 52
+INFO 2024-09-25 15:30:11,631 judge_handler Denki: 23 test case(s) completed on: 52
+INFO 2024-09-25 15:30:11,882 judge_handler Denki: 22 test case(s) completed on: 52
+INFO 2024-09-25 15:30:12,133 judge_handler Denki: 24 test case(s) completed on: 52
+INFO 2024-09-25 15:30:12,359 judge_handler Denki: 21 test case(s) completed on: 52
+INFO 2024-09-25 15:30:12,367 judge_handler Denki: Grading has ended on: 52
+INFO 2024-09-25 15:30:12,367 judge_list Judge available after grading 52: Denki
+INFO 2024-09-25 15:30:24,559 judge_list Free judges: 2
+INFO 2024-09-25 15:30:24,560 judge_list Dispatched submission 52 to: Yuna
+INFO 2024-09-25 15:30:24,568 judge_handler Submission acknowledged: 52
+INFO 2024-09-25 15:30:24,744 judge_handler Yuna: Submission generated compiler messages: 52
+INFO 2024-09-25 15:30:24,748 judge_handler Yuna: Grading has begun on: 52
+INFO 2024-09-25 15:30:24,889 judge_handler Yuna: 13 test case(s) completed on: 52
+INFO 2024-09-25 15:30:25,140 judge_handler Yuna: 23 test case(s) completed on: 52
+INFO 2024-09-25 15:30:25,390 judge_handler Yuna: 21 test case(s) completed on: 52
+INFO 2024-09-25 15:30:25,641 judge_handler Yuna: 24 test case(s) completed on: 52
+INFO 2024-09-25 15:30:25,840 judge_handler Yuna: 19 test case(s) completed on: 52
+INFO 2024-09-25 15:30:25,847 judge_handler Yuna: Grading has ended on: 52
+INFO 2024-09-25 15:30:25,848 judge_list Judge available after grading 52: Yuna
+INFO 2024-09-25 15:58:19,158 judge_handler Denki: Updated problem list
+INFO 2024-09-25 15:58:19,159 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 15:58:22,159 judge_handler Denki: Updated problem list
+INFO 2024-09-25 15:58:22,160 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 15:58:27,652 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 15:58:27,652 judge_handler Denki: Updated problem list
+INFO 2024-09-25 15:58:30,653 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 15:58:30,654 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:00:18,591 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:00:18,592 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:00:21,593 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:00:21,595 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:00:24,594 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:00:24,595 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:00:28,522 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:00:28,524 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:00:31,524 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:00:31,524 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:00:38,168 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:00:38,168 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:00:41,169 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:00:41,171 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:01:00,797 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:01:00,798 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:01:03,799 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:01:03,800 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:01:06,802 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:01:06,802 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:01:09,803 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:01:09,804 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:01:15,666 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:01:15,666 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:01:18,667 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:01:18,670 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:01:25,391 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:01:25,392 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:01:28,393 judge_handler Denki: Updated problem list
+INFO 2024-09-25 16:01:28,393 judge_handler Yuna: Updated problem list
+INFO 2024-09-25 16:02:33,376 judge_handler Judge connected from: ('127.0.0.1', 48298)
+INFO 2024-09-25 16:02:33,380 judge_handler Judge authenticated: ('127.0.0.1', 48298) (Cookie)
+INFO 2024-09-25 16:02:49,073 judge_handler Judge connected from: ('127.0.0.1', 35386)
+INFO 2024-09-25 16:02:49,077 judge_handler Judge authenticated: ('127.0.0.1', 35386) (Maginus)
+INFO 2024-09-25 16:08:11,712 judge_handler Judge disconnected from: ('127.0.0.1', 42210) with name Denki
+INFO 2024-09-25 16:08:15,807 judge_handler Judge disconnected from: ('127.0.0.1', 42212) with name Yuna
+INFO 2024-09-25 16:08:58,340 judge_handler Judge connected from: ('127.0.0.1', 54444)
+INFO 2024-09-25 16:08:58,344 judge_handler Judge disconnected from: ('127.0.0.1', 54444) with name None
+INFO 2024-09-25 16:09:01,816 judge_handler Judge connected from: ('127.0.0.1', 49826)
+INFO 2024-09-25 16:09:01,819 judge_handler Judge disconnected from: ('127.0.0.1', 49826) with name None
+INFO 2024-09-25 16:09:02,347 judge_handler Judge connected from: ('127.0.0.1', 49838)
+INFO 2024-09-25 16:09:02,351 judge_handler Judge disconnected from: ('127.0.0.1', 49838) with name None
+INFO 2024-09-25 16:09:05,822 judge_handler Judge connected from: ('127.0.0.1', 49840)
+INFO 2024-09-25 16:09:05,827 judge_handler Judge disconnected from: ('127.0.0.1', 49840) with name None
+INFO 2024-09-25 16:09:07,394 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:09:07,395 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:09:08,355 judge_handler Judge connected from: ('127.0.0.1', 49842)
+INFO 2024-09-25 16:09:08,361 judge_handler Judge disconnected from: ('127.0.0.1', 49842) with name None
+INFO 2024-09-25 16:09:10,396 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:09:10,399 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:09:11,830 judge_handler Judge connected from: ('127.0.0.1', 59724)
+INFO 2024-09-25 16:09:11,836 judge_handler Judge disconnected from: ('127.0.0.1', 59724) with name None
+INFO 2024-09-25 16:09:17,364 judge_handler Judge connected from: ('127.0.0.1', 59730)
+INFO 2024-09-25 16:09:17,370 judge_handler Judge disconnected from: ('127.0.0.1', 59730) with name None
+INFO 2024-09-25 16:09:17,654 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:09:17,654 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:09:20,656 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:09:20,659 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:09:20,839 judge_handler Judge connected from: ('127.0.0.1', 53634)
+INFO 2024-09-25 16:09:20,844 judge_handler Judge disconnected from: ('127.0.0.1', 53634) with name None
+INFO 2024-09-25 16:09:30,826 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:09:30,828 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:09:30,874 judge_handler Judge connected from: ('127.0.0.1', 55324)
+INFO 2024-09-25 16:09:30,878 judge_handler Judge disconnected from: ('127.0.0.1', 55324) with name None
+INFO 2024-09-25 16:09:33,827 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:09:33,829 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:09:34,348 judge_handler Judge connected from: ('127.0.0.1', 55334)
+INFO 2024-09-25 16:09:34,353 judge_handler Judge disconnected from: ('127.0.0.1', 55334) with name None
+INFO 2024-09-25 16:09:51,132 judge_handler Judge connected from: ('127.0.0.1', 57606)
+INFO 2024-09-25 16:09:51,138 judge_handler Judge disconnected from: ('127.0.0.1', 57606) with name None
+INFO 2024-09-25 16:09:54,606 judge_handler Judge connected from: ('127.0.0.1', 57618)
+INFO 2024-09-25 16:09:54,611 judge_handler Judge disconnected from: ('127.0.0.1', 57618) with name None
+INFO 2024-09-25 16:09:59,782 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:09:59,785 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:10:02,784 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:10:02,785 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:10:10,177 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:10:10,178 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:10:13,179 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:10:13,180 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:10:16,458 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:10:16,460 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:10:19,459 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:10:19,460 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:10:21,517 judge_handler Judge connected from: ('127.0.0.1', 55058)
+INFO 2024-09-25 16:10:21,523 judge_handler Judge disconnected from: ('127.0.0.1', 55058) with name None
+INFO 2024-09-25 16:10:22,461 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:10:22,463 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:10:24,989 judge_handler Judge connected from: ('127.0.0.1', 55060)
+INFO 2024-09-25 16:10:24,994 judge_handler Judge disconnected from: ('127.0.0.1', 55060) with name None
+INFO 2024-09-25 16:11:52,194 judge_handler Judge connected from: ('127.0.0.1', 35942)
+INFO 2024-09-25 16:11:52,198 judge_handler Judge authenticated: ('127.0.0.1', 35942) (PhatDev)
+INFO 2024-09-25 16:12:05,026 judge_handler Judge connected from: ('127.0.0.1', 35422)
+WARNING 2024-09-25 16:12:05,030 judge_handler Judge authentication failure: ('127.0.0.1', 35422)
+INFO 2024-09-25 16:12:05,031 judge_handler Judge disconnected from: ('127.0.0.1', 35422) with name None
+INFO 2024-09-25 16:12:09,034 judge_handler Judge connected from: ('127.0.0.1', 35426)
+WARNING 2024-09-25 16:12:09,040 judge_handler Judge authentication failure: ('127.0.0.1', 35426)
+INFO 2024-09-25 16:12:09,040 judge_handler Judge disconnected from: ('127.0.0.1', 35426) with name None
+INFO 2024-09-25 16:12:15,043 judge_handler Judge connected from: ('127.0.0.1', 59438)
+WARNING 2024-09-25 16:12:15,048 judge_handler Judge authentication failure: ('127.0.0.1', 59438)
+INFO 2024-09-25 16:12:15,049 judge_handler Judge disconnected from: ('127.0.0.1', 59438) with name None
+INFO 2024-09-25 16:12:24,052 judge_handler Judge connected from: ('127.0.0.1', 33312)
+WARNING 2024-09-25 16:12:24,058 judge_handler Judge authentication failure: ('127.0.0.1', 33312)
+INFO 2024-09-25 16:12:24,059 judge_handler Judge disconnected from: ('127.0.0.1', 33312) with name None
+INFO 2024-09-25 16:13:13,424 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:13:13,424 judge_handler PhatDev: Updated problem list
+INFO 2024-09-25 16:13:13,424 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:13:16,426 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:13:16,426 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:13:16,428 judge_handler PhatDev: Updated problem list
+INFO 2024-09-25 16:13:22,000 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:13:22,003 judge_handler PhatDev: Updated problem list
+INFO 2024-09-25 16:13:22,003 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:13:25,001 judge_handler Maginus: Updated problem list
+INFO 2024-09-25 16:13:25,003 judge_handler Cookie: Updated problem list
+INFO 2024-09-25 16:13:25,003 judge_handler PhatDev: Updated problem list
+INFO 2024-09-25 16:14:06,188 judge_handler Judge connected from: ('127.0.0.1', 45410)
+INFO 2024-09-25 16:14:06,192 judge_handler Judge disconnected from: ('127.0.0.1', 45410) with name None
+INFO 2024-09-25 16:14:10,195 judge_handler Judge connected from: ('127.0.0.1', 45418)
+INFO 2024-09-25 16:14:10,200 judge_handler Judge disconnected from: ('127.0.0.1', 45418) with name None
+INFO 2024-09-25 16:15:16,548 judge_handler Judge connected from: ('127.0.0.1', 36952)
+INFO 2024-09-25 16:15:16,553 judge_handler Judge authenticated: ('127.0.0.1', 36952) (Denki <3 Yuna)
