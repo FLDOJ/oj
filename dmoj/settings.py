@@ -104,6 +104,7 @@ DMOJ_RATING_COLORS = True
 DMOJ_EMAIL_THROTTLING = (10, 60)
 DMOJ_STATS_LANGUAGE_THRESHOLD = 10
 DMOJ_SUBMISSIONS_REJUDGE_LIMIT = 10
+DMOJ_SUBMISSION_LIMIT = 5
 # Maximum number of submissions a single user can queue without the `spam_submission` permission
 FLDOJ_BLOG_MIN_PROBLEM_COUNT = 2
 # Whether to allow users to view source code: 'all' | 'all-solved' | 'only-own'
